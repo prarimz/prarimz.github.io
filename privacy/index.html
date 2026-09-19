@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moomin Privacy Policy</title>
+<meta name="description" content="What the Moomin Discord bot records about members of the Jay Nepal server, what it never stores, who else sees it, and how to opt out or delete it.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22><text y=%2214%22 font-size=%2214%22>&#128274;</text></svg>">
+<style>
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; }
+  img { max-width: 100%; }
+  [hidden] { display: none !important; }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --ground: #faf8f7;
+    --surface: #ffffff;
+    --surface-sunk: #f4f0ef;
+    --ink: #1a1517;
+    --ink-soft: #453c3f;
+    --muted: #756a6e;
+    --rule: #e5dedd;
+    --rule-firm: #cfc4c3;
+    --accent: #9b2c3b;
+    --accent-ink: #7d2430;
+    --accent-wash: #f6e7e8;
+    --ok: #2f6b4f;
+    --ok-wash: #e6f0ea;
+
+    --measure: 66ch;
+    --step-0: 1.0rem;
+    --step-1: 1.1875rem;
+    --step-2: 1.4375rem;
+    --step-3: 1.875rem;
+    --step-4: 2.625rem;
+  }
+
+  :root:not([data-theme="light"]) {
+    color-scheme: light;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --ground: #171315;
+      --surface: #1e191b;
+      --surface-sunk: #241e20;
+      --ink: #f1ecec;
+      --ink-soft: #d5cbcd;
+      --muted: #a2959a;
+      --rule: #332b2e;
+      --rule-firm: #4a3e42;
+      --accent: #e78290;
+      --accent-ink: #f0a3ad;
+      --accent-wash: #3a2428;
+      --ok: #7fc09d;
+      --ok-wash: #1e2f27;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --ground: #171315;
+    --surface: #1e191b;
+    --surface-sunk: #241e20;
+    --ink: #f1ecec;
+    --ink-soft: #d5cbcd;
+    --muted: #a2959a;
+    --rule: #332b2e;
+    --rule-firm: #4a3e42;
+    --accent: #e78290;
+    --accent-ink: #f0a3ad;
+    --accent-wash: #3a2428;
+    --ok: #7fc09d;
+    --ok-wash: #1e2f27;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Public Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: var(--step-0);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 47rem;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  a { color: var(--accent-ink); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible, summary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  code, .mono {
+    font-family: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 0.875em;
+  }
+  code {
+    background: var(--surface-sunk);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 0.08em 0.34em;
+    color: var(--ink-soft);
+    white-space: nowrap;
+  }
+
+  /* ── masthead ─────────────────────────────────────────── */
+  .masthead {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--ink);
+  }
+  .eyebrow {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .masthead h1 {
+    font-family: "Newsreader", Georgia, "Times New Roman", serif;
+    font-weight: 600;
+    font-size: var(--step-4);
+    line-height: 1.08;
+    letter-spacing: -0.015em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .standfirst {
+    font-family: "Newsreader", Georgia, serif;
+    font-size: var(--step-1);
+    line-height: 1.5;
+    color: var(--ink-soft);
+    max-width: var(--measure);
+    margin: 0;
+  }
+  .stamp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.6rem;
+    font-size: 0.8125rem;
+    color: var(--muted);
+    margin-top: 0.4rem;
+  }
+  .stamp b { color: var(--ink-soft); font-weight: 500; }
+
+  /* ── the short version ────────────────────────────────── */
+  .short {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--accent);
+    padding: 1.5rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .short h2 {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0;
+  }
+  .short ul { margin: 0; padding-left: 1.1rem; display: flex; flex-direction: column; gap: 0.5rem; }
+  .short li { max-width: var(--measure); }
+
+  /* ── sections ─────────────────────────────────────────── */
+  main { display: flex; flex-direction: column; gap: 2.75rem; }
+
+  section { display: flex; flex-direction: column; gap: 0.9rem; }
+
+  section > h2 {
+    font-family: "Newsreader", Georgia, serif;
+    font-size: var(--step-2);
+    font-weight: 600;
+    line-height: 1.25;
+    margin: 0;
+    display: flex;
+    gap: 0.75rem;
+    align-items: baseline;
+    text-wrap: balance;
+  }
+  section > h2 .num {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--accent);
+    flex: none;
+    padding-top: 0.15em;
+  }
+  section h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 0.6rem 0 -0.25rem;
+    color: var(--ink);
+  }
+  section p, section li { max-width: var(--measure); margin: 0; }
+  section > p + p { margin-top: -0.2rem; }
+  section ul { margin: 0; padding-left: 1.15rem; display: flex; flex-direction: column; gap: 0.45rem; }
+
+  /* ── the ledger ───────────────────────────────────────── */
+  .ledger {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    margin-top: 0.4rem;
+  }
+  .ledger > div {
+    background: var(--surface);
+    padding: 1.25rem 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .ledger h3 {
+    margin: 0;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .ledger .kept h3 { color: var(--accent); }
+  .ledger .never h3 { color: var(--ok); }
+  .ledger dl { margin: 0; display: flex; flex-direction: column; gap: 0.7rem; }
+  .ledger dt {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.78rem;
+    color: var(--ink);
+    font-weight: 500;
+  }
+  .ledger dd { margin: 0.1rem 0 0; font-size: 0.875rem; color: var(--muted); line-height: 1.5; }
+
+  /* ── commands ─────────────────────────────────────────── */
+  .commands {
+    border-top: 1px solid var(--rule-firm);
+    margin-top: 0.4rem;
+  }
+  .cmd {
+    display: grid;
+    grid-template-columns: minmax(10.5rem, auto) 1fr;
+    gap: 0.35rem 1.5rem;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: baseline;
+  }
+  .cmd .name {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--accent-ink);
+  }
+  .cmd .what { color: var(--ink-soft); font-size: 0.9375rem; }
+  @media (max-width: 34rem) {
+    .cmd { grid-template-columns: 1fr; gap: 0.2rem; }
+  }
+
+  /* ── retention table ──────────────────────────────────── */
+  .scroller { overflow-x: auto; margin-top: 0.4rem; }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 30rem;
+    font-size: 0.9375rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 0.7rem 1rem 0.7rem 0;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  thead th {
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+    border-bottom: 1px solid var(--rule-firm);
+    padding-top: 0;
+  }
+  td:last-child, th:last-child { padding-right: 0; }
+  tbody td:first-child { color: var(--ink); font-weight: 500; }
+  tbody td:last-child { color: var(--muted); }
+
+  /* ── callout ──────────────────────────────────────────── */
+  .note {
+    background: var(--accent-wash);
+    border: 1px solid var(--rule);
+    padding: 1.1rem 1.25rem;
+    font-size: 0.9375rem;
+    color: var(--ink-soft);
+    max-width: var(--measure);
+  }
+  .note strong { color: var(--ink); }
+
+  footer {
+    border-top: 2px solid var(--ink);
+    padding-top: 1.5rem;
+    font-size: 0.875rem;
+    color: var(--muted);
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <header class="masthead">
+    <div class="eyebrow">Jay Nepal &middot; Discord</div>
+    <h1>Moomin Privacy Policy</h1>
+    <p class="standfirst">Moomin is the levelling, activity and moderation bot for the Jay Nepal Discord server. This page says exactly what it records about you, what it never touches, who else sees any of it, and how to switch the whole thing off.</p>
+    <div class="stamp">
+      <span><b>Last updated</b> 19 September 2026</span>
+      <span><b>Applies to</b> the Moomin bot in Jay Nepal</span>
+      <span><b>Operator</b> the Jay Nepal server owner</span>
+    </div>
+  </header>
+
+  <div class="short">
+    <h2>The short version</h2>
+    <ul>
+      <li>Moomin counts what you do. It does not keep what you say.</li>
+      <li>Your messages are read as they arrive so the bot can award XP and catch spam, then discarded. The text is never written to the database.</li>
+      <li>One feature sends message text outside the server: <code>&gt;roast</code>, which passes up to 50 of the target's recent messages to Google's Gemini API. Nothing else leaves.</li>
+      <li>Run <code>&gt;privacy off</code> and Moomin stops recording anything about you from that moment. Run <code>&gt;privacy delete</code> and everything already held is erased.</li>
+      <li>Moderation records are the one exception, and they are not yours to switch off. See section 8.</li>
+    </ul>
+  </div>
+
+  <main>
+
+    <section>
+      <h2><span class="num">01</span><span>What Moomin records</span></h2>
+      <p>Everything below is attached to your Discord user ID. No names, emails, IP addresses or payment details are collected, because the bot has no way to see them and no use for them.</p>
+
+      <div class="ledger">
+        <div class="kept">
+          <h3>Stored</h3>
+          <dl>
+            <dt>allTimePoints, level, prestige</dt>
+            <dd>Your XP and rank, earned from messages and voice minutes.</dd>
+
+            <dt>hist</dt>
+            <dd>How many messages, voice minutes and XP you had on each calendar day. Days roll over at midnight Asia/Kathmandu.</dd>
+
+            <dt>hours, activity</dt>
+            <dd>Which hours of the day and days of the week you are usually active. Counts only.</dd>
+
+            <dt>channelActivity</dt>
+            <dd>How many messages you have sent in each channel. A number per channel, not the messages.</dd>
+
+            <dt>replyTo, vcWith, firstTalk</dt>
+            <dd>Who you reply to and who you sit in voice with, and when you first spoke. This is the social graph.</dd>
+
+            <dt>loginStreak, quests, inventory</dt>
+            <dd>Your daily streak, quest progress, and anything you have bought or equipped.</dd>
+
+            <dt>otdFeatured</dt>
+            <dd>Message IDs the "On This Day" feature has already resurfaced, so it does not repeat itself. IDs only, no text.</dd>
+          </dl>
+        </div>
+        <div class="never">
+          <h3>Never stored</h3>
+          <dl>
+            <dt>the text of your messages</dt>
+            <dd>Read in memory to award XP, run automod and count activity, then dropped. It is not written to the database.</dd>
+
+            <dt>attachments, images, voice audio</dt>
+            <dd>Never downloaded, never recorded. Voice is counted in minutes; nothing is listened to.</dd>
+
+            <dt>your email, real name or IP address</dt>
+            <dd>The bot never receives them.</dd>
+
+            <dt>anything from outside this server</dt>
+            <dd>Moomin runs in one server and sees nothing else on Discord.</dd>
+
+            <dt>anything at all, if you opted out</dt>
+            <dd>The opt-out is applied before collection, not filtered afterwards.</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="num">02</span><span>Why Moomin needs to read messages</span></h2>
+      <p>Discord calls this the Message Content intent, and it is the most sensitive permission the bot holds, so it is worth being precise about it.</p>
+      <p>Moomin reads the content of messages in the server for four things: awarding XP for genuine participation rather than one-word spam, detecting emoji, sticker and reaction spam so it can warn or restrict repeat offenders, answering commands that begin with <code>&gt;</code>, and picking a daily Featured Quote.</p>
+      <p>In every one of those the text exists only for as long as the check takes. What survives is a number: your XP went up, your message count for today went up, an offence was recorded. The sentence itself is gone.</p>
+      <p>Two deliberate exceptions, both of which store text you wrote on purpose rather than in passing:</p>
+      <ul>
+        <li><strong>Reports.</strong> When you report someone, the reason you type is kept with the report, up to 1,500 characters, so moderators can act on it.</li>
+        <li><strong>Direct messages to the bot.</strong> DMs sent to Moomin are forwarded to a private staff channel so the team can answer them. Do not send the bot anything you would not send the moderators.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="num">03</span><span>Where it is stored</span></h2>
+      <p>All of it sits in a single PostgreSQL database hosted by Supabase, which encrypts data at rest. The bot itself runs on a private virtual server. Access to both is limited to the server owner.</p>
+      <p>The database holds no credentials of yours, because you never give the bot any. There is no account to sign into, no password, and nothing to breach on your side.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">04</span><span>Who else sees it</span></h2>
+      <p>Your data is not sold, rented, or shared with advertisers, and there is no analytics or tracking product attached to any of it.</p>
+
+      <h3>Google (Gemini API)</h3>
+      <p>The <code>&gt;roast</code> command is the only feature that sends message text off the server. When somebody roasts you, up to 50 of your recent public messages in the server are sent to Google's Gemini API to write the reply. They are sent at the moment of the request and are not stored by Moomin before or after. Google's handling of them is governed by <a href="https://ai.google.dev/gemini-api/terms" rel="noopener noreferrer" target="_blank">Google's own API terms</a>.</p>
+      <p>If you would rather that never happened, <code>&gt;privacy off</code> makes you un-roastable, and the command refuses by name.</p>
+
+      <h3>Everyone else the bot talks to</h3>
+      <p>Moomin also fetches football fixtures, Nepali calendar dates, market odds and GIFs from third-party APIs. None of those requests contain anything about you: they are lookups for public information, identical no matter who triggered them.</p>
+
+      <h3>Server staff</h3>
+      <p>Moderators can see reports, warnings, automod offences and the leaderboards. That is the job.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">05</span><span>How long it is kept</span></h2>
+      <p>Moomin is a levelling bot, so most of what it holds is meant to last: a rank that quietly reset every month would not be a rank. Nothing is kept on a 30-day cycle.</p>
+      <div class="scroller">
+        <table>
+          <thead>
+            <tr><th scope="col">What</th><th scope="col">Kept for</th><th scope="col">Why</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>XP, level, prestige, inventory</td><td>Indefinitely</td><td>It is the state of the levelling system.</td></tr>
+            <tr><td>Per-day activity history</td><td>About one year</td><td>Older days are pruned automatically.</td></tr>
+            <tr><td>Social graph edges</td><td>Decay weekly</td><td>Connections that go quiet fade out on their own.</td></tr>
+            <tr><td>Reports and moderation records</td><td>Indefinitely</td><td>A safety record that outlives a single incident.</td></tr>
+            <tr><td>Message text</td><td>Not kept</td><td>Discarded as soon as the check finishes.</td></tr>
+            <tr><td>Anything, after <code>&gt;privacy delete</code></td><td>Erased immediately</td><td>Including references to you held on other members.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="num">06</span><span>Your controls</span></h2>
+      <p>Four commands, usable by anyone, with no need to ask a moderator first.</p>
+      <div class="commands">
+        <div class="cmd">
+          <span class="name">&gt;privacy</span>
+          <span class="what">Shows exactly what is held on you right now, counted from the live database rather than described from memory.</span>
+        </div>
+        <div class="cmd">
+          <span class="name">&gt;privacy off</span>
+          <span class="what">Stops collection entirely: no XP, no activity history, no channel counts, no quests, no social graph in either direction, never picked for Featured Quote or On This Day, and never roastable.</span>
+        </div>
+        <div class="cmd">
+          <span class="name">&gt;privacy on</span>
+          <span class="what">Starts again from that moment. Nothing from the opted-out period was kept, so there is nothing to restore.</span>
+        </div>
+        <div class="cmd">
+          <span class="name">&gt;privacy delete</span>
+          <span class="what">Permanently erases your record, and strips the connections naming you from every other member's record too. Asks for confirmation first, and cannot be undone.</span>
+        </div>
+      </div>
+      <p class="note"><strong>Opting out is applied at the point of collection.</strong> Moomin does not record your activity and then hide it. The check runs before anything is written, so an opted-out member leaves nothing behind to forget about later.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">07</span><span>Leaving the server</span></h2>
+      <p>Your record is not deleted automatically when you leave, so that returning members keep their rank rather than starting over. If you want it gone, run <code>&gt;privacy delete</code> before you go, or ask using the contact below afterwards.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">08</span><span>The moderation exception</span></h2>
+      <p>Warnings, automod offences, and reports filed about you are not covered by the opt-out and are not removed by <code>&gt;privacy delete</code>.</p>
+      <p>These are a safety record belonging to the server and to the members who filed them, not personal data belonging to their subject. A delete command that cleared your own file would make it useless to everyone it exists to protect. Everything else is yours to erase.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">09</span><span>Age</span></h2>
+      <p>Discord requires all users to be at least 13, and older in some countries. Moomin is available only inside one Discord server and inherits that requirement. It does not knowingly hold data on anyone below the minimum age for their country; if you believe it does, use the contact below and the record will be removed.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">10</span><span>Changes to this policy</span></h2>
+      <p>If what the bot collects changes, this page changes with it and the date at the top is updated. A change that widens what is collected will be announced in the server rather than made quietly.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">11</span><span>Contact</span></h2>
+      <p>For anything this page does not answer, for a deletion request you cannot make yourself, or for a complaint about how your data has been handled:</p>
+      <ul>
+        <li>Run <code>&gt;privacy</code> in the server, which handles most of it instantly.</li>
+        <li>Message a moderator in the Jay Nepal Discord server.</li>
+        <li>Email the server owner at <strong>[add your contact email]</strong>.</li>
+      </ul>
+      <p>Deletion requests made by email are actioned manually and confirmed back to you.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>Moomin is an independent community bot. It is not affiliated with, endorsed by, or operated by Discord Inc.</span>
+    <span>Jay Nepal &middot; Privacy Policy &middot; Version 1.0, 19 September 2026</span>
+  </footer>
+
+</div>
+
+</body>
+</html>
